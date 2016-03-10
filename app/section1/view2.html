@@ -1,24 +1,100 @@
 <div class="content">
-  <h1>Television has been unleashed, colonising digital screens</h1>
-  <div class="graph-wrapper">
-  </div>
-  <div class="small-text-box">
-    The digital revolution has made television content <br>
-    available anytime, anywhere and in doing so <br>
-    pushed it firmly into the digital melting pot <br>
-  </div>
-  <div class="quotes">
-    <div>
+  <div class="blue-background">
+    <h1 class="page-header">
+      Television has been unleashed, colonising digital screens
+    </h1>
+    <div class="graph-wrapper">
+      <p>PROPORTION OF WEEKLY VIEWING ACROSS SCREENS</p>
+      <div class='stacked-bar'>
+        <p>TOTAL: 4.0 hrs a day</p>
+        <div style="background: #163262; width: 71%">
+          <p style="font-size: 150%;">71%</p>
+        </div
+        ><div style="background: #5994E4; width: 19%">
+          <p>19%</p>
+        </div
+        ><div style="background: #8EADE3; width: 4%">
+          <p>4%</p>
+        </div
+        ><div style="background: #C8D7F8; width: 6%">
+          <p>6%</p>
+        </div>
+      </div>
+      <div style="height:15vh" ng-show="S1Ctrl.hiddenStackedBars"></div>
+      <div ng-hide="S1Ctrl.hiddenStackedBars">
+        <div class='hidden-stacked-bar'>
+          <p>16-34 year olds: 3.9hrs a day</p>
+          <div style="background: #163262; width: 71%">
+            <p>71%</p>
+          </div
+          ><div style="background: #5994E4; width: 19%">
+            <p>19%</p>
+          </div
+          ><div style="background: #8EADE3; width: 4%">
+            <p>4%</p>
+          </div
+          ><div style="background: #C8D7F8; width: 6%">
+            <p>6%</p>
+          </div>
+        </div>
+        <div class='hidden-stacked-bar'>
+          <p>35-54 year olds: 3.9hrs a day</p>
+          <div style="background: #163262; width: 71%">
+            <p>71%</p>
+          </div
+          ><div style="background: #5994E4; width: 19%">
+            <p>19%</p>
+          </div
+          ><div style="background: #8EADE3; width: 4%">
+            <p>4%</p>
+          </div
+          ><div style="background: #C8D7F8; width: 6%">
+            <p>6%</p>
+          </div>
+        </div>
+        <div class='hidden-stacked-bar'>
+          <p>55-65 year olds: 4.4hrs a day</p>
+          <div style="background: #163262; width: 71%">
+            <p>71%</p>
+          </div
+          ><div style="background: #5994E4; width: 19%">
+            <p>19%</p>
+          </div
+          ><div style="background: #8EADE3; width: 4%">
+            <p>4%</p>
+          </div
+          ><div style="background: #C8D7F8; width: 6%">
+            <p>6%</p>
+          </div>
+        </div>
+      </div>
+      <div class="more-data" ng-show="S1Ctrl.hiddenStackedBars" ng-click="S1Ctrl.hiddenStackedBars = false">
+        [see more data]
+      </div>
+      <div class="more-data" ng-hide="S1Ctrl.hiddenStackedBars" ng-click="S1Ctrl.hiddenStackedBars = true">
+        [see less data]
+      </div>
+    </div>
+    <div class="small-text-box">
       <p>
-        “I watch some television via online media players on <br>
-        my tablet and smartphone, but my main television <br>
-        viewing is on my new large 50 inch TV” <br>
+        The digital revolution has made television content <br>
+        available anytime, anywhere and in doing so <br>
+        pushed it firmly into the digital melting pot <br>
       </p>
     </div>
-    <div>
-      <p>
-        “I use the screen that is appropriate for the moment”
-      </p>
+    <div class="quotes">
+      <div>
+        <p>
+          “I watch some television via online media players on <br>
+          my tablet and smartphone, but my main television <br>
+          viewing is on my new large 50 inch TV” <br>
+        </p>
+      </div>
+      <div>
+        <p>
+          “I use the screen that is appropriate for the moment”
+        </p>
+      </div>
     </div>
   </div>
 </div>

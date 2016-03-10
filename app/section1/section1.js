@@ -27,4 +27,5 @@ angular.module('myApp.section1', ['ngRoute'])
 
 .controller('Section1Ctrl', [function() {
 
+  this.hiddenStackedBars = true;
 }]);
