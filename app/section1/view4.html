@@ -1,10 +1,34 @@
 <div class="content">
+  <a href="/app/#/view3">
+    <div class="header">
+      <i class="fa fa-chevron-up"></i>
+    </div>
+  </a>
   <div class="blue-background">
     <h1 class="page-header">
       Television schedules have been untethered, <br>
       providing true flexibility
     </h1>
     <div class="graph-wrapper">
+      <p style="margin-left: 0;">% WHO REGULARLY WATCH</p>
+      <p style="margin-bottom: 0;">TOTAL</p>
+      <canvas id="barChart1" width="1000" height="150"></canvas>
+      <div class="hidden-bar-charts" ng-hide="S1V4Ctrl.hiddenBarCharts">
+        <p>16-34 year olds</p>
+        <canvas id="barChart2" width="1000" height="70"></canvas>
+
+        <p>35-54 year olds</p>
+        <canvas id="barChart3" width="1000" height="70"></canvas>
+
+        <p>55-65 year olds</p>
+        <canvas id="barChart4" width="1000" height="70"></canvas>
+      </div>
+      <div class="more-data" ng-show="S1V4Ctrl.hiddenBarCharts" ng-click="S1V4Ctrl.hiddenBarCharts = false">
+        [see more data]
+      </div>
+      <div class="more-data" ng-hide="S1V4Ctrl.hiddenBarCharts" ng-click="S1V4Ctrl.hiddenBarCharts = true">
+        [see less data]
+      </div>
     </div>
     <div class="small-text-box">
       <p>
@@ -25,4 +49,9 @@
       </div>
     </div>
   </div>
+  <a href="/app/#/view5">
+    <div class="footer">
+      <i class="fa fa-chevron-down"></i>
+    </div>
+  </a>
 </div>

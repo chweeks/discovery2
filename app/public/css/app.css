@@ -15,6 +15,33 @@ p {
   font-size: 300%;
 }
 
+.header {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.header:hover {
+  background: rgba(255,255,255,0.5);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer:hover {
+  background: rgba(255,255,255,0.5);
+}
+
+.fa {
+  color: white;
+  margin: auto;
+}
+
 .content {
   background: url("../images/background.jpg") no-repeat center;
   background-size: cover;
@@ -56,7 +83,25 @@ p {
 }
 
 .graph-wrapper > p {
-  margin-bottom: 6%;
+  margin-bottom: 1%;
+  font-weight: 600;
+  color: darkslategray;
+}
+
+.graph-wrapper > canvas {
+  margin-left: 10%;
+}
+
+.graph-wrapper > p {
+  margin-left: 10%;
+}
+
+.graph-wrapper > .hidden-bar-charts {
+  margin-left: 10%;
+}
+
+.hidden-bar-charts > p {
+  margin-bottom: 0;
   font-weight: 600;
   color: darkslategray;
 }
@@ -145,6 +190,7 @@ p {
 .quotes {
   font-size: 100%;
   float: right;
+  width: 27%;
 }
 
 .quotes > div {
