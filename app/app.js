@@ -5,15 +5,15 @@ angular.module('myApp', ['ngRoute'])
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/view1', {
     templateUrl: 'section1/view1.html',
-    controller: 'Section1Ctrl as S1Ctrl'
+    controller: 'Section1View1Ctrl as S1V1Ctrl'
   });
   $routeProvider.when('/view2', {
     templateUrl: 'section1/view2.html',
-    controller: 'Section1Ctrl as S1Ctrl'
+    controller: 'Section1View2Ctrl as S1V2Ctrl'
   });
   $routeProvider.when('/view3', {
     templateUrl: 'section1/view3.html',
-    controller: 'Section1Ctrl as S1Ctrl'
+    controller: 'Section1View3Ctrl as S1V3Ctrl'
   });
   $routeProvider.when('/view4', {
     templateUrl: 'section1/view4.html',
@@ -21,15 +21,23 @@ angular.module('myApp', ['ngRoute'])
   });
   $routeProvider.when('/view5', {
     templateUrl: 'section1/view5.html',
-    controller: 'Section1Ctrl S1Ctrl'
+    controller: 'Section1View5Ctrl as S1V5Ctrl'
   });
   $routeProvider.otherwise({redirectTo: '/view1'});
 }])
 
-.controller('Section1Ctrl', [function() {
+.controller('Section1View1Ctrl', [function() {
 
   this.hiddenStackedBars = true;
   this.isCollapsed = true;
+
+}])
+
+.controller('Section1View2Ctrl', [function() {
+
+}])
+
+.controller('Section1View3Ctrl', [function() {
 
 }])
 
@@ -119,4 +127,8 @@ angular.module('myApp', ['ngRoute'])
   updateColors(barChart4, colors);
 
   this.hiddenBarCharts = true;
+}])
+
+.controller('Section1View5Ctrl', [function() {
+
 }]);
